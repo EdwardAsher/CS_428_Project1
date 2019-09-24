@@ -40,7 +40,7 @@ public class vbInteraction : MonoBehaviour, IVirtualButtonEventHandler
         {
             VideoButtonPlayer();
         }
-        if(vbName == "ReviewButtonPlayer")
+        else if(vbName == "ReviewButtonPlayer")
         {
             ReviewButtonPlayer();
         }
@@ -51,7 +51,7 @@ public class vbInteraction : MonoBehaviour, IVirtualButtonEventHandler
         
     }
 
-    void VideoButtonPlayer()
+    public void VideoButtonPlayer()
     {
         if (count == 0)
         {
@@ -85,7 +85,7 @@ public class vbInteraction : MonoBehaviour, IVirtualButtonEventHandler
         Debug.Log("Button pressed");
     }
 
-    void ReviewButtonPlayer()
+    public void ReviewButtonPlayer()
     {
         if(count2 == 0)
         {
